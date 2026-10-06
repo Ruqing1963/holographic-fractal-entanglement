@@ -1,0 +1,8 @@
+
+[ren] D_theory=1.5, D_fit=1.524, rel. residual=1.50e-03
+  smooth pole c_s=3.0412, leading c_0=3.9454
+  complex dimension s_1 = 1.524 -5.719i :  |C_1/c_0| = 8.634e-03
+  complex dimension s_2 = 1.524 -11.438i :  |C_2/c_0| = 5.492e-04
+  complex dimension s_3 = 1.524 -17.158i :  |C_3/c_0| = 2.938e-04
+  S_ren drift in window (max-min) = 4.964e+00  vs  change of bare area 1.159e+04
+  naive local counterterm residual: -5.724e+03 (z_c=4.1e-03) -> still divergent, coefficient ~(1/D-1)c_0 z_c^-D

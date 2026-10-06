@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Holographic Entanglement of Fractal Regions: code, data and figures"
+authors:
+  - family-names: Chen
+    given-names: Ruqing
+    affiliation: "GUT Geoservice Inc., Montreal"
+    email: ruqing@hotmail.com
+repository-code: "https://github.com/Ruqing1963/holographic-fractal-entanglement"
+doi: 10.5281/zenodo.23189575
+date-released: 2026-10-06
+keywords:
+  - holography
+  - AdS/CFT
+  - entanglement entropy
+  - Ryu-Takayanagi
+  - fractals
+  - complex dimensions
+  - multifractal
+  - Renyi entropy
+preferred-citation:
+  type: article
+  title: "Holographic Entanglement of Fractal Regions: Complex Dimensions, Non-local Counterterms and Cosmic-Brane Multifractality"
+  authors:
+    - family-names: Chen
+      given-names: Ruqing
+      affiliation: "GUT Geoservice Inc., Montreal"
+  year: 2026
+  doi: 10.5281/zenodo.23189575

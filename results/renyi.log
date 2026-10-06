@@ -1,0 +1,14 @@
+
+[renyi] binomial two-scale Cantor: p=(0.7, 0.3), r=(0.25, 0.4), ε=1e-60
+  spectral groups=152, sum of eigenvalues = 1.000000000000
+    q     τ(q)     α_q     f(α_q)   S~_q/L (num. deriv.)  S_vN(escort)/L
+   0.5  -0.2726  0.6057  0.5755     0.5774          0.5774
+   1.5  +0.2235  0.4085  0.3892     0.3916          0.3916
+   2.0  +0.4130  0.3533  0.2937     0.2959          0.2959
+   3.0  +0.7327  0.2949  0.1519     0.1506          0.1506
+   5.0  +1.2807  0.2628  0.0332     0.0320          0.0320
+
+  holographic hyperbolic-black-hole branes: check q²∂_q((q-1)/q S_q)/ℒ  =  x_q^{d-1}
+    d=2: max|S̃_q/ℒ - x_q^(d-1)| = 4.26e-09
+    d=3: max|S̃_q/ℒ - x_q^(d-1)| = 9.83e-09
+    d=4: max|S̃_q/ℒ - x_q^(d-1)| = 1.39e-08

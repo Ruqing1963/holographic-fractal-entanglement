@@ -1,0 +1,10 @@
+
+[stage 3-1] complex dimensions of lattice Moran equations
+  Koch type: 4 copies of ratio 1/3: Re(s) ∈ [1.26186],  Im spacing 2π/ln b = 5.7192
+    S_ren residual minus prediction, max deviation = 8.99e-04,  Re=0 oscillation amplitude = 0.000e+00
+  lattice string: ratios 2^-1, 2^-5: Re(s) ∈ [-0.202843, 0.0, 0.405685],  Im spacing 2π/ln b = 9.0647
+    S_ren residual minus prediction, max deviation = 3.35e-04,  Re=0 oscillation amplitude = 1.584e-01
+
+[stage 3-3] geodesic bit-thread flow (planar entangling surface)
+  ∇·v = 0
+  |v|  = z**(d - 1)*(x**2 + z**2)**(1/2 - d/2)/(4*G)   (<= 1/4G, saturated only on the RT surface x=0)

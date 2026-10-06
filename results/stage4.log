@@ -1,0 +1,11 @@
+
+[stage 4-1] dense Cardy spectrum -> f(alpha): max deviation from √((c/3)(2α-c/3)) / (c/6) = 8.19e-02  (c=12.0, W=400.0; finite-W corrections ~ ln W / W)
+  Ising-channel cascade (b=3, annulus width per generation = ln b):
+    W_gen=1.099: p_j = [7.5447e-01 2.4544e-01 9.0000e-05], D_0=1.000, D_1=0.508
+    W_gen=4.394: p_j = [0.53733 0.4058  0.05687], D_0=1.000, D_1=0.785
+
+[stage 4-2] fractal-string resonator: D = 0.6309
+  Theta minus Weyl, D family and constant vs Re=0 prediction, max deviation = 2.16e-06
+  Re=0 peak-to-peak = 0.0589 modes;  D-family oscillation/power ~ 0.024
+  fundamental amplitude |A_0| = 0.0145, log-period = 2 ln3 (repeats every factor 9 in frequency)
+  example device (ℓ_0=0.1 m, v=1.2e+08 m/s): fundamental 0.60 GHz; two Re=0 periods need f in [0.60, 48.6] GHz;  shortest branch ℓ_0·3^-4 = 1.23 mm
