@@ -85,6 +85,12 @@ If you use this code or data, please cite the paper (see also `CITATION.cff`):
 }
 ```
 
+## License
+
+- **Code** (`code/`): [MIT License](LICENSE)
+- **Manuscript, figures, data and results** (`paper/`, `figures/`, `data/`, `results/`):
+  [CC BY 4.0](LICENSE-CC-BY-4.0.md)
+
 ## Contact
 
 Ruqing Chen — GUT Geoservice Inc., Montreal — ruqing@hotmail.com
