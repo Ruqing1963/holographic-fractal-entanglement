@@ -12,6 +12,8 @@
 \theoremstyle{remark}\newtheorem*{remark}{Remark}
 
 \graphicspath{{../figures/}{figures/}{./}}
+\setlength{\emergencystretch}{3em}
+\usepackage{xurl}
 \newcommand{\cA}{\mathcal{A}}
 \newcommand{\cD}{\mathfrak{D}}
 \newcommand{\RR}{\mathbb{R}}
@@ -210,9 +212,10 @@ $\sqrt{h}=(R/z)^{d-1}\sqrt{1+|\partial f|^2}$ with $|\partial f|^2=|\nabla_yf|^2
 \label{lem:radial}
 With a radial cutoff at $z=\varepsilon<z_0$,
 \begin{equation}
-\Area_\varepsilon(\gamma_A)=\Area(\gamma_A\cap\{z>z_0\})+R^{d-1}\int_\varepsilon^{z_0}\dd z\,z^{1-d}\cA(z),
-\qquad
+\begin{gathered}
+\Area_\varepsilon(\gamma_A)=\Area(\gamma_A\cap\{z>z_0\})+R^{d-1}\int_\varepsilon^{z_0}\dd z\,z^{1-d}\cA(z),\\
 -\varepsilon\,\partial_\varepsilon S_A=\frac{R}{4\GN}\Vol\big(\gamma_A\cap\{z=\varepsilon\}\big),
+\end{gathered}
 \label{eq:radial}
 \end{equation}
 where $\Vol(\gamma_A\cap\{z=\varepsilon\})=(R/\varepsilon)^{d-2}\cA(\varepsilon)$ is the proper
@@ -343,9 +346,10 @@ Let $\gamma_A$ be the RT surface of $A$ and $\cA$ its cross-section content~\eqr
 \item[(iii)] (Log-periodic refinement.) If $z^{D_\partial-(d-2)}\cA(z)=P(\ln z)+o(1)$ with $P$ continuous and
 periodic of period $\ln b$, $P(t)=\sum_mP_me^{2\pi imt/\ln b}$, then
 \begin{equation}
-S_A=\frac{R^{d-1}}{4\GN}\,\varepsilon^{-D_\partial}\tilde P(\ln\varepsilon)+o(\varepsilon^{-D_\partial}),
-\qquad
+\begin{gathered}
+S_A=\frac{R^{d-1}}{4\GN}\,\varepsilon^{-D_\partial}\tilde P(\ln\varepsilon)+o(\varepsilon^{-D_\partial}),\\
 \tilde P(t)=\int_0^\infty e^{-D_\partial u}P(t+u)\,\dd u,\qquad \tilde P_m=\frac{P_m}{D_\partial-2\pi im/\ln b}.
+\end{gathered}
 \label{eq:Ptilde}
 \end{equation}
 In particular, the mean coefficient is reduced by $1/D_\partial$ relative to the smooth-boundary normalisation.
@@ -1141,9 +1145,11 @@ which can be computed directly from a measured list of resonances. Its Mellin tr
 \end{equation}
 where $\zeta(s)$ is the Riemann zeta function, so that as $u\to\infty$
 \begin{equation}
+\begin{gathered}
 \Theta(u)=\frac{\sqrt\pi}{2}\zeta_L(1)\,u+\sum_{m\in\ZZ}A_m^{(D)}u^{D+2\pi im/\ln3}+\frac14
-+\sum_{m\in\ZZ}A_m^{(0)}u^{(2m+1)\pi i/\ln3}+\dots,
-\qquad A=\frac{\Gamma(s/2)\zeta(s)}{2M'(s)}\Big|_{\rm pole}.
++\sum_{m\in\ZZ}A_m^{(0)}u^{(2m+1)\pi i/\ln3}+\dots,\\
+A=\frac{\Gamma(s/2)\zeta(s)}{2M'(s)}\Big|_{\rm pole}.
+\end{gathered}
 \label{eq:resonator}
 \end{equation}
 The constant is $\tfrac12\cdot2\cdot\zeta(0)/M(0)=1/4$. The poles of $\Gamma(s/2)$ at $s=-2,-4,\dots$ are
@@ -1267,9 +1273,15 @@ with \texttt{mpmath}.
 
 \section{Mellin asymptotics and renewal theory}
 \label{app:renewal}
-We record the standard argument~\cite{Feller,LvF} behind Theorem~\ref{thm:dsi}(iv). With
-$F(\ell)=e^{-(D_\partial-(d-2))\ell}\cA(e^{-\ell})$ and weights $w_j=r_j^{D_\partial}$, $\sum_jw_j=1$, the renewal
-equation~\eqref{eq:renewal} reads $F(\ell)=\sum_jw_jF(\ell-\lambda_j)+\tilde g(\ell)$. For the Laplace transform
+We record the standard argument~\cite{Feller,LvF} behind Theorem~\ref{thm:dsi}(iv). Define
+\begin{equation}
+F(\ell)=e^{-(D_\partial-(d-2))\ell}\,\cA(e^{-\ell}),\qquad w_j=r_j^{D_\partial},\qquad \sum_jw_j=1 .
+\end{equation}
+Then the renewal equation~\eqref{eq:renewal} reads
+\begin{equation}
+F(\ell)=\sum_jw_jF(\ell-\lambda_j)+\tilde g(\ell).
+\end{equation}
+For the Laplace transform
 $\widehat F(s)=\int_0^\infty e^{-s\ell}F(\ell)\,\dd\ell$ this gives
 \begin{equation}
 \widehat F(s)=\frac{\widehat{\tilde g}(s)+E(s)}{1-\sum_jw_je^{-s\lambda_j}},
