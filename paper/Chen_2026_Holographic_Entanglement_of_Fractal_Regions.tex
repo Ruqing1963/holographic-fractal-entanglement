@@ -387,7 +387,7 @@ fixed by symmetry independently of linearisation.
 We computed $\cA(z)$ for the linearised surface with $b=3$, six modes, $A_0=k_0=1$ and $d=3$, on $2^{15}$
 points per period, and fitted power laws over the window $3/k_{\max}\le z\le0.3/k_0$ (about $2.4$ decades).
 The results are in Table~\ref{tab:exponents} and Fig.~\ref{fig:scaling}.
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
 \begin{tabular}{ccccc}
 \toprule
@@ -421,7 +421,7 @@ $|\partial f|\gg1$.
 Including the smooth pole and three log-periodic harmonics in the fit (Section~\ref{sec:dsinum}) reduces
 the discrepancy at $D=1.5$ from $0.061$ to $0.024$, with relative residual $1.5\times10^{-3}$.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.9\textwidth]{rt_scaling}
 \caption{Cross-section content $\cA(z)$ (left) and regulated RT area (right) for the linearised Weierstrass
@@ -713,7 +713,7 @@ With the counterterm~\eqref{eq:Ict} built from the fitted residues, the renormal
 $5$ (in units of $R^2/4\GN$) across the window, while the bare area changes by $1.2\times10^4$. The local
 counterterm $-RV/4\GN$ leaves a residual $\approx(1/D-1)c_0z_c^{-D}$ of order $-6\times10^3$
 (Fig.~\ref{fig:ren}).
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{rt_renormalization}
 \caption{Left: log-periodic function $P$ folded over periods. Middle: bare area times $z_c^{D}$. Right:
@@ -853,7 +853,7 @@ system the remainder is constant to $9\times10^{-4}$. For the $(2^{-1},2^{-5})$ 
 peak-to-peak amplitude $0.16$ and period $6\ln2$, agreeing with the Mellin prediction
 $\sum_{\mathrm{Re}\,\omega=0}c_\omega\varepsilon^{-\omega}/\omega$ to $3\times10^{-4}$ (Fig.~\ref{fig:dsi}).
 
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{dsi_complex_dims}
 \caption{Left: complex dimensions of the Koch-type system and the $(2^{-1},2^{-5})$ lattice string. Middle
@@ -987,14 +987,14 @@ $w_j(q)=p_j^qr_j^{-\tau(q)}>0$ summing to $1$, shows that the imaginary parts ar
 confirmed this numerically for $r=(1/2,1/4)$, where the oscillation has period $\ln2$ for $q=-2,0,2,4$. For
 a non-lattice cascade the oscillation is not periodic (Fig.~\ref{fig:lockin}).
 
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.9\textwidth]{bcft_closure}
 \caption{Left: singularity spectrum from BCFT open-channel weights with Cardy density (numerical) against the
 cosmic-brane result~\eqref{eq:CLf}. Right: cascade spectra from Ising boundary operators.}
 \label{fig:bcft}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.9\textwidth]{multifractal_lockin}
 \caption{$\ln Z_q(\varepsilon)-\tau(q)\ln\varepsilon$ for lattice (left) and non-lattice (right) binomial
@@ -1017,7 +1017,7 @@ in~\cite{ABP}. We adapt their geodesic construction to the planar case.
 \begin{proposition}[Thread depth distribution and geodesic flow]
 \label{prop:threads}
 \begin{enumerate}
-\item[(i)] For every maximal flow, the flux through $\gamma_A\cap\{z_1<z<z_2\}$ is
+\item[(i)] The flux through $\gamma_A\cap\{z_1<z<z_2\}$ is the same for every maximal flow and equals
 $\int_{z_1}^{z_2}n(z)\dd z$, with
 \begin{equation}
 n(z)=\frac{R^{d-1}}{4\GN}z^{1-d}\cA(z)=\frac{R}{4\GN}\frac{V(z)}{z},
@@ -1178,7 +1178,7 @@ measurement, not new physics. A physically non-trivial test would use a coupled 
 cavity with a lattice-self-similar boundary, for which the smoothed counting function is not additive. In
 that case the pole \emph{locations} of~\eqref{eq:resonator} are still fixed by $M(s)$, but the residues are not.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{resonator_fingerprint}
 \caption{Lattice fractal-string resonator. Left: residual heat trace divided by $u^D$, showing the integer
@@ -1230,9 +1230,9 @@ algorithmically simple at every finite resolution~\cite{Chen2026_chaitin}.
 \end{enumerate}
 
 \section*{Data and code availability}
-All numerical results and figures in this paper are produced by the Python script
-\texttt{holographic\_fractal\_rt.py} (modes \texttt{rt}, \texttt{ren}, \texttt{renyi}, \texttt{stage3},
-\texttt{stage4}), distributed in the repository
+The Python script \texttt{holographic\_fractal\_rt.py} produces all numerical results and figures in this paper.
+It is run in the modes \texttt{rt}, \texttt{ren}, \texttt{renyi}, \texttt{stage3} and \texttt{stage4}, and it is distributed in the
+repository
 \url{https://github.com/Ruqing1963/holographic-fractal-entanglement} and archived on Zenodo under DOI
 \href{https://doi.org/10.5281/zenodo.23189575}{10.5281/zenodo.23189575}.
 
@@ -1302,6 +1302,7 @@ frequencies in $\Lambda^\perp=(2\pi/\ln b)\ZZ$. Without the growth hypothesis, t
 theorem~\cite{Feller} still gives $F(\ell)-P(\ell)\to0$, but without a rate. In the non-lattice case,
 $\Lambda^\perp=\{0\}$ and $F$ converges to a constant.
 
+\begingroup\raggedright
 \begin{thebibliography}{99}
 % Journal data checked against INSPIRE-HEP, arXiv and Crossref; textbook editions checked against
 % publisher pages (October 2026).
@@ -1364,4 +1365,5 @@ A.~Kosior, J.~Wang, ``Entanglement entropy of free fermions on random fractal la
 \bibitem{Chen2026_mqe} R.~Chen, ``Multifractal large deviations in quantum entanglement: Ideal Fermi-gas mapping, Markov tensor cascades, and quartic Casimir symmetry'' (2026), doi:10.5281/zenodo.23193512.
 \bibitem{Chen2026_chaitin} R.~Chen, ``Uncomputable fractal dimensions, Kolmogorov complexity cascades, and the Chaitin barrier in physical systems'' (2026), doi:10.5281/zenodo.23194419.
 \end{thebibliography}
+\endgroup
 \end{document}
